@@ -42,3 +42,25 @@
     数据质量评判标准：
     低相关性：特征之间的相关性不应过高，高相关性可能表示冗余。
     适中相关性：适中的相关性（例如，0.3至0.7）表示特征有一定关系，但不完全重复。
+
+# 二、 项目流程
+## 1. 先fork项目，然后克隆，下面是主网样例
+    git clone https://github.com/vaelephant/Data-Cleaning.git
+
+## 2. 安装依赖
+    pip install pandas numpy seaborn matplotlib flask
+
+## 3. 文件结构
+    weibui\dataset：数据集文件夹，可放入csv,feather,parquet,pkl,txt,xlsx等格式的数据文件
+    weibui\static：图像文件夹，数据清洗后生成的图像按照数据集名称和格式保存在里面
+    weibui\templates\index.html：web前端页面代码，html格式
+    weibui\app.py：web应用代码，python格式
+
+## 4. 运行
+    cd weibui
+    python app.py
+
+## 5. 访问
+    http://127.0.0.1:5000/
+
+    
